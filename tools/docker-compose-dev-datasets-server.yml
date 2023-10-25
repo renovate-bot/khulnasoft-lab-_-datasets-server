@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   reverse-proxy:
-    image: docker.io/nginx:1.20
+    image: docker.io/nginx:1.25
     # image: ${IMAGE_REVERSE_PROXY?IMAGE_REVERSE_PROXY env var must be provided}
     volumes:
       - ../chart/nginx-templates/:/etc/nginx/templates:ro
